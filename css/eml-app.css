@@ -1,0 +1,11 @@
+
+html, body      { height: 100%; width: 100%; margin: 0; padding: 0; overflow: hidden; background: white; }
+
+
+
+.clear          { clear:both; }
+
+.mainContainer  { height: 100% !important; width: 100%;}
+
+.fileDropRegion { height: 100px; width: 700px; margin: auto; margin-top: 50px; background: #f8f8f8; }
+
