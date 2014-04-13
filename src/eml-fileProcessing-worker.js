@@ -31,7 +31,7 @@
                     index                       = fileLines[i].indexOf("From:", 0);
                     if (index > -1) { from      = fileLines[i].substring(index + 1 + ("From:").length); continue; }            
                     index                       = fileLines[i].indexOf("Subject:", 0);
-                        if (index > -1) { subject   = fileLines[i].substring(index + 1 + ("Subject:").length); continue; }
+                    if (index > -1) { subject   = fileLines[i].substring(index + 1 + ("Subject:").length); continue; }
                     index                       = fileLines[i].indexOf("To:", 0);
                     if (index > -1) { to        = fileLines[i].substring(index + 1 + ("To:").length); continue; }
                     index                       = fileLines[i].indexOf("Date:", 0);
