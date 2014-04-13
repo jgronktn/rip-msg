@@ -16,26 +16,41 @@
 
 <body>
     <div id="mainContainer" class="mainContainer">
-		<div id="fileDropRegion" class="fileDropRegion"></div>
-	</div>
-
+	<div id="fileDropRegion" class="fileDropRegion"></div>
 	
-	<script src="../vendor/promise-3.2.0.js"></script>
-	<script src="../vendor/jquery-1.11.0.min.js"></script>
-	<script src="../vendor/knockout-3.1.0.js"></script>
-	<script src="../vendor/knockout-delegatedEvents.js"></script>
-	<script src="eml-viewModelFileDrop.js"></script>
-	<script src="eml-app.js"></script>
-	<script type="text/javascript">
+	<div id="emailHeader" class="emailHeader">
+	    <div class="emailHeaderItem">
+		<div class="emailHeaderItemLabel">From:</div>
+		<div id="emailHeaderDate" class="emailHeaderItemText" data-bind="text: from"></div><div class="clear"></div>
+		<div class="emailHeaderItemLabel">Subject:</div>
+		<div id="emailHeaderDate" class="emailHeaderItemText" data-bind="text: subject"></div><div class="clear"></div>
+		<div class="emailHeaderItemLabel">To:</div>
+		<div id="emailHeaderDate" class="emailHeaderItemText" data-bind="text: to"></div><div class="clear"></div>
+		<div class="emailHeaderItemLabel">Date:</div>
+		<div id="emailHeaderDate" class="emailHeaderItemText" data-bind="text: timestamp"></div><div class="clear"></div>
+		<div class="emailHeaderItemLabel">Size:</div>
+		<div id="emailHeaderDate" class="emailHeaderItemText" data-bind="text: size"></div><div class="clear"></div>
+	    </div>  
+	</div>
+    </div>
+
+    <script src="../vendor/promise-3.2.0.js"></script>
+    <script src="../vendor/jquery-1.11.0.min.js"></script>
+    <script src="../vendor/knockout-3.1.0.js"></script>
+    <script src="../vendor/knockout-delegatedEvents.js"></script>
+    <script src="../vendor/moment.min.js"></script>
+    <script src="eml-viewModelFileDrop.js"></script>
+    <script src="eml-app.js"></script>
+    <script type="text/javascript">
 		
-		var app;
+	var app;
 		
-		$(document).ready(function() {
+	$(document).ready(function() {
 				
-						    // load the app
-		    app								= new emlrip.App();
-			app.run();
-		});
-	</script>
+			    // load the app
+	    app				= new emlrip.App();
+	    app.run();
+	});
+    </script>
 </body>
 </html>
