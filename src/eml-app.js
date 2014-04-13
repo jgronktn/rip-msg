@@ -12,7 +12,8 @@ window.emlrip                               = window.emlrip || {};
             
             var fileDropVM                  = new emlrip.FileDropVM();
             
-            ko.applyBindings(fileDropVM, $('#fileDropRegion')[0]);
+    //        ko.applyBindings(fileDropVM, $('#fileDropRegion')[0]);
+            ko.applyBindings(fileDropVM, $('#mainContainer')[0]);
         }   
     }
     emlrip.App                              = App;
