@@ -29,6 +29,7 @@ window.emlrip                               = window.emlrip || {};
             equal(emlrip.subject(), "Organizer App", "Passed!");
             equal(emlrip.timestamp(), "Mon, 31 Mar 2014 19:58:04 -0500", "Passed!");
             equal(emlrip.to(), "John Ronk <jgronktn@gmail.com>", "Passed!");
+            equal(emlrip.size(), 2467);
             
             start();
         }, 200);
